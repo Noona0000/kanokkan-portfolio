@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="font-sans min-h-screen bg-white text-black flex flex-col items-center px-4 py-8 sm:py-12">
@@ -27,10 +29,16 @@ export default function Home() {
 
       {/* ส่วนแนะนำตัว (Introduction) */}
       <section className="w-full max-w-3xl grid grid-cols-1 md:grid-cols-3 gap-6 bg-yellow-50 rounded-xl p-6 mb-8 shadow">
-        {/* ภาพโปรไฟล์หรือไอคอน */}
+        {/* ภาพโปรไฟล์ */}
         <div className="flex flex-col items-center md:items-start">
-          <div className="w-28 h-28 bg-yellow-200 rounded-lg flex items-center justify-center mb-3">
-            <span className="text-4xl">👩‍🎓</span>
+          <div className="w-28 h-28 mb-3 overflow-hidden rounded-lg relative">
+            <Image
+              src="/S__10059779.jpg"
+              alt="Profile"
+              fill
+              className="object-cover"
+              sizes="(max-width: 112px) 100vw, 112px"
+            />
           </div>
           <div className="text-sm text-gray-600 text-center md:text-left">
             โปรไฟล์
