@@ -131,7 +131,7 @@ export default function Home() {
   </h3>
 
   <a 
-    href="/certs/certificate.pdf" 
+    href="/certificate.pdf" 
     target="_blank"
     className="text-blue-500 underline"
   >
