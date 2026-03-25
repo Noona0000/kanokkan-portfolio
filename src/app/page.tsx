@@ -12,13 +12,6 @@ export default function Home() {
           <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-center leading-tight">
             PORTFOLIO
           </h1>
-          <div className="flex gap-2 mt-2 text-yellow-500 font-semibold text-base">
-            <span>Compilation</span>
-            <span>•</span>
-            <span>Work & Assignment</span>
-            <span>•</span>
-            <span>2025</span>
-          </div>
         </div>
         <span className="absolute right-0 top-0 text-xs font-bold text-gray-400">
           KANOKKAN
@@ -123,11 +116,26 @@ export default function Home() {
           อธิบายเป้าหมายในการทำงาน
         </div>
       </section>
+      {/* เกียรติบัตรและรางวัล (Certificates & Awards) */}
+      <section className="w-full max-w-3xl bg-white rounded-xl p-6 mb-8 shadow border">
+  <h3 className="text-xl font-bold text-yellow-600 mb-4">
+    เกียรติบัตรและรางวัล
+  </h3>
+
+  <a 
+    href="/certs/certificate.pdf" 
+    target="_blank"
+    className="text-blue-500 underline"
+  >
+    ดูเกียรติบัตร
+  </a>
+
+  <div className="text-sm text-gray-600 mt-4">
+    เกียรติบัตรและรางวัลที่ได้รับระหว่างการศึกษา
+  </div>
+</section>
 
       {/* Footer */}
-      <footer className="w-full max-w-3xl text-center text-xs text-gray-400 py-4">
-        © 2025 Kanokkan Witthura. All rights reserved.
-      </footer>
     </div>
   );
 }
