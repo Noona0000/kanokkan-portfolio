@@ -130,13 +130,17 @@ export default function Home() {
     เกียรติบัตรและรางวัล
   </h3>
 
-  <a 
-    href="/certificate.pdf" 
-    target="_blank"
-    className="text-blue-500 underline"
-  >
-    ดูเกียรติบัตร
-  </a>
+  <div className="border-4 border-yellow-400 rounded-lg p-3 bg-yellow-50 w-fit">
+    <div className="w-64 h-auto relative overflow-hidden rounded-md">
+      <Image
+        src="/certificate.jpg"
+        alt="Certificate"
+        width={300}
+        height={200}
+        className="object-cover"
+      />
+    </div>
+  </div>
 
   <div className="text-sm text-gray-600 mt-4">
     เกียรติบัตรและรางวัลที่ได้รับระหว่างการศึกษา
