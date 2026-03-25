@@ -117,59 +117,15 @@ export default function Home() {
     Certificates & Awards
   </h3>
 
-  <div className="space-y-6">
-    {/* Certificate 1 */}
-    <div className="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-indigo-200">
-      <div className="p-4 bg-gradient-to-r from-blue-600 to-indigo-600">
-        <h4 className="font-bold text-white text-sm">Network Literacy</h4>
-        <p className="text-indigo-100 text-xs">10 Hours | Thai MOOC</p>
-      </div>
-      <div className="aspect-video bg-gray-100 overflow-hidden">
-        <img 
-          src="/certificate1.jpg" 
-          alt="Network Literacy Certificate"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div className="p-4 bg-white">
-        <p className="text-sm text-gray-600">Chiang Mai University • 30 September 2025</p>
-      </div>
-    </div>
-
-    {/* Certificate 2 */}
-    <div className="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-indigo-200">
-      <div className="p-4 bg-gradient-to-r from-blue-600 to-indigo-600">
-        <h4 className="font-bold text-white text-sm">System & Network Management</h4>
-        <p className="text-indigo-100 text-xs">7 Hours | Thai MOOC</p>
-      </div>
-      <div className="aspect-video bg-gray-100 overflow-hidden">
-        <img 
-          src="/certificate2.jpg" 
-          alt="System and Network Management Certificate"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div className="p-4 bg-white">
-        <p className="text-sm text-gray-600">RMUT Tawan-ok • 05 January 2026</p>
-      </div>
-    </div>
-
-    {/* Certificate 3 */}
-    <div className="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-indigo-200">
-      <div className="p-4 bg-gradient-to-r from-blue-600 to-indigo-600">
-        <h4 className="font-bold text-white text-sm">Network Security Analysis & Vulnerability Management</h4>
-        <p className="text-indigo-100 text-xs">6 Hours | Thai MOOC</p>
-      </div>
-      <div className="aspect-video bg-gray-100 overflow-hidden">
-        <img 
-          src="/certificate3.jpg" 
-          alt="Network Security Analysis Certificate"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div className="p-4 bg-white">
-        <p className="text-sm text-gray-600">RMUT Tawan-ok • 05 January 2026</p>
-      </div>
+  <div className="border-4 border-indigo-400 rounded-lg p-3 bg-gradient-to-br from-blue-50 to-indigo-50 w-fit shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="w-64 h-auto relative overflow-hidden rounded-md">
+      <Image
+        src="/certificate.jpg"
+        alt="Certificate"
+        width={300}
+        height={200}
+        className="object-cover"
+      />
     </div>
   </div>
 </section>
