@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           {/* สามารถเปลี่ยนเป็นภาพ SVG หรือไอคอนการ์ตูนได้ */}
           <div className="w-32 h-32 bg-gradient-to-br from-blue-300 to-indigo-400 rounded-full flex items-center justify-center mb-2 shadow-lg drop-shadow-xl">
-            <span className="text-5xl">🎨</span>
+            <span className="text-5xl">🐱</span>
           </div>
           <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-center leading-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
             PORTFOLIO
@@ -76,12 +76,8 @@ export default function Home() {
           <li className="bg-gradient-to-r from-blue-200 to-indigo-200 px-3 py-1 rounded-full hover:from-blue-300 hover:to-indigo-300 transition-colors duration-200">
             การทำงานเป็นทีม
           </li>
-          <li className="bg-gradient-to-r from-blue-200 to-indigo-200 px-3 py-1 rounded-full hover:from-blue-300 hover:to-indigo-300 transition-colors duration-200">การสื่อสาร</li>
           <li className="bg-gradient-to-r from-blue-200 to-indigo-200 px-3 py-1 rounded-full hover:from-blue-300 hover:to-indigo-300 transition-colors duration-200">
-            ความรับผิดชอบสูง
-          </li>
-          <li className="bg-gradient-to-r from-blue-200 to-indigo-200 px-3 py-1 rounded-full hover:from-blue-300 hover:to-indigo-300 transition-colors duration-200">
-            กระตือรือร้นในการเรียนรู้สิ่งใหม่
+            การพูดคุย และการสื่อสาร
           </li>
         </ul>
       </section>
@@ -96,7 +92,7 @@ export default function Home() {
             ชื่นชอบการเล่นกีฬา
           </li>
           <li className="bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-1 rounded-full hover:from-blue-200 hover:to-indigo-200 transition-colors duration-200">
-            กิจกรรมด้านชุมชนและอาสาสมัคร
+            กิจกรรมด้านสุขภาพเต้นแอโรบิค
           </li>
         </ul>
       </section>
@@ -106,31 +102,71 @@ export default function Home() {
         <h3 className="text-xl font-bold text-transparent bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text mb-2">
           Career Objective
         </h3>
-        <p className="text-base leading-relaxed">
-          ต้องการนำความรู้ ความสามารถ
-          พร้อมเรียนรู้ทักษะใหม่ๆ เพื่อเติบโตไปพร้อมกัน
+        <p className="text-base leading-relaxed">         
+          พร้อมเรียนรู้ทักษะใหม่ๆ เพื่อเติบโตในสายงานที่เลือก
+          และมีความมุ่งมั่นที่จะพัฒนาตนเองอย่างต่อเนื่องเพื่อเป็นบุคลากรที่มีคุณค่าในองค์กร
         </p>
       </section>
       {/* เกียรติบัตรและรางวัล (Certificates & Awards) */}
-      <section className="w-full max-w-3xl bg-white rounded-2xl p-8 mb-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-600">
-  <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text mb-6">
+      <section className="w-full max-w-4xl bg-white rounded-2xl p-6 mb-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-600">
+  <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text mb-8">
     Certificates & Awards
   </h3>
 
-  <div className="border-4 border-indigo-400 rounded-lg p-3 bg-gradient-to-br from-blue-50 to-indigo-50 w-fit shadow-lg hover:shadow-xl transition-shadow duration-300">
-    <div className="w-64 h-auto relative overflow-hidden rounded-md">
-      <Image
-        src="/certificate.jpg"
-        alt="Certificate"
-        width={300}
-        height={200}
-        className="object-cover"
-      />
+  {/* ส่วนจัดการ Layout: เรียง 1 คอลัมน์ในมือถือ และ 2 คอลัมน์ในจอคอม (md:grid-cols-2) */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
+    
+    {/* เกียรติบัตรใบที่ 1 */}
+    <div className="group border-2 border-indigo-200 rounded-xl p-2 bg-gradient-to-br from-white to-blue-50 shadow-md hover:shadow-2xl hover:border-indigo-400 transition-all duration-300 w-full max-w-sm">
+      <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
+        <Image
+          src="/certificate.jpg"
+          alt="Certificate"
+          fill
+          className="object-contain group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
     </div>
+
+    {/* เกียรติบัตรใบที่ 2 */}
+    <div className="group border-2 border-indigo-200 rounded-xl p-2 bg-gradient-to-br from-white to-blue-50 shadow-md hover:shadow-2xl hover:border-indigo-400 transition-all duration-300 w-full max-w-sm">
+      <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
+        <Image
+          src="/certificate1.png"
+          alt="Certificate 1"
+          fill
+          className="object-contain group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+    </div>
+
+    {/* เกียรติบัตรใบที่ 3 */}
+    <div className="group border-2 border-indigo-200 rounded-xl p-2 bg-gradient-to-br from-white to-blue-50 shadow-md hover:shadow-2xl hover:border-indigo-400 transition-all duration-300 w-full max-w-sm">
+      <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
+        <Image
+          src="/certificate2.png"
+          alt="Certificate 2"
+          fill
+          className="object-contain group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+    </div>
+
+    {/* เกียรติบัตรใบที่ 4 */}
+    <div className="group border-2 border-indigo-200 rounded-xl p-2 bg-gradient-to-br from-white to-blue-50 shadow-md hover:shadow-2xl hover:border-indigo-400 transition-all duration-300 w-full max-w-sm">
+      <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
+        <Image
+          src="/certificate3.png"
+          alt="Certificate 3"
+          fill
+          className="object-contain group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+    </div>
+
   </div>
 </section>
-
-      {/* Footer */}
+ 
     </div>
   );
 }

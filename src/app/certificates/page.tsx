@@ -39,7 +39,11 @@ export default function Certificates() {
               >
                 {/* ไอคอนหรือรูปเกียรติบัตร */}
                 <div className="w-full h-48 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-6xl">🏅</span>
+                  <img 
+                    src="/shin-chan.png" 
+                    alt="Shin-chan Cartoon"
+                    className="w-40 h-40 object-contain"
+                  />
                 </div>
 
                 {/* ข้อมูลเกียรติบัตร */}
